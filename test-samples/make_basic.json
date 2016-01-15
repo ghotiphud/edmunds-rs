@@ -1,0 +1,105 @@
+{
+    "id": 200002038,
+    "name": "Acura",
+    "niceName": "acura",
+    "models": [{
+        "id": "Acura_ILX",
+        "name": "ILX",
+        "niceName": "ilx",
+        "years": [{
+            "id": 200471908,
+            "year": 2014
+        }, {
+            "id": 200701415,
+            "year": 2015
+        }, {
+            "id": 200713715,
+            "year": 2016
+        }]
+    }, {
+        "id": "Acura_ILX_Hybrid",
+        "name": "ILX Hybrid",
+        "niceName": "ilx-hybrid",
+        "years": [{
+            "id": 200493809,
+            "year": 2014
+        }]
+    }, {
+        "id": "Acura_MDX",
+        "name": "MDX",
+        "niceName": "mdx",
+        "years": [{
+            "id": 200465929,
+            "year": 2014
+        }, {
+            "id": 200698434,
+            "year": 2015
+        }, {
+            "id": 200726800,
+            "year": 2016
+        }]
+    }, {
+        "id": "Acura_RDX",
+        "name": "RDX",
+        "niceName": "rdx",
+        "years": [{
+            "id": 200467168,
+            "year": 2014
+        }, {
+            "id": 200693511,
+            "year": 2015
+        }, {
+            "id": 200727186,
+            "year": 2016
+        }]
+    }, {
+        "id": "Acura_RLX",
+        "name": "RLX",
+        "niceName": "rlx",
+        "years": [{
+            "id": 100539511,
+            "year": 2014
+        }, {
+            "id": 200706522,
+            "year": 2015
+        }, {
+            "id": 200729233,
+            "year": 2016
+        }]
+    }, {
+        "id": "Acura_TL",
+        "name": "TL",
+        "niceName": "tl",
+        "years": [{
+            "id": 200488448,
+            "year": 2014
+        }]
+    }, {
+        "id": "Acura_TLX",
+        "name": "TLX",
+        "niceName": "tlx",
+        "years": [{
+            "id": 200673634,
+            "year": 2015
+        }, {
+            "id": 401583109,
+            "year": 2016
+        }]
+    }, {
+        "id": "Acura_TSX",
+        "name": "TSX",
+        "niceName": "tsx",
+        "years": [{
+            "id": 200490517,
+            "year": 2014
+        }]
+    }, {
+        "id": "Acura_TSX_Sport_Wagon",
+        "name": "TSX Sport Wagon",
+        "niceName": "tsx-sport-wagon",
+        "years": [{
+            "id": 200673755,
+            "year": 2014
+        }]
+    }]
+}

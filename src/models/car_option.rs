@@ -3,7 +3,8 @@ use super::Price;
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct CarOption {
     category: String,
-    options: Vec<CarOptionDetail>
+    #[serde(default)]
+    options: Vec<CarOptionDetail>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -12,7 +13,7 @@ pub struct CarOptionDetail {
     name: String,
     description: Option<String>,
     equipmentType: String,
-    price: Price,
+    price: Option<Price>,
     manufactureOptionName: Option<String>,
     manufactureOptionCode: Option<String>,
 }

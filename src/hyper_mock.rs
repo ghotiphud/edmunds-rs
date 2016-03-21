@@ -61,8 +61,8 @@ impl Read for MockStream {
                         }
                     }
                     Ok(n)
-                },
-                r => r
+                }
+                r => r,
             }
         }
     }
@@ -146,9 +146,7 @@ impl NetworkStream for CloneableMockStream {
 
 impl CloneableMockStream {
     pub fn with_stream(stream: MockStream) -> CloneableMockStream {
-        CloneableMockStream {
-            inner: Arc::new(Mutex::new(stream)),
-        }
+        CloneableMockStream { inner: Arc::new(Mutex::new(stream)) }
     }
 }
 

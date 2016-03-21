@@ -3,7 +3,7 @@ use super::Price;
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Color {
     category: String,
-    options: Vec<ColorOption>
+    options: Vec<ColorOption>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -15,20 +15,21 @@ pub struct ColorOption {
     manufactureOptionName: String,
     manufactureOptionCode: String,
     colorChips: Option<ColorChips>,
+    #[serde(default)]
     fabricTypes: Vec<FabricType>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ColorDetail {
-    r: u8,
-    g: u8,
-    b: u8,
+    r: u16,
+    g: u16,
+    b: u16,
     hex: String,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct ColorChips {
-    primary: ColorDetail,
+    primary: Option<ColorDetail>,
     secondary: Option<ColorDetail>,
 }
 

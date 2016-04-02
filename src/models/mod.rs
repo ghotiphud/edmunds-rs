@@ -89,7 +89,7 @@ pub struct Categories {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Submodel {
-    pub body: String,
+    pub body: Option<String>,
     pub fuel: Option<String>,
     #[serde(rename="modelName")]
     pub model_name: String,

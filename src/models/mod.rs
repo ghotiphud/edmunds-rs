@@ -12,13 +12,15 @@ mod color;
 mod transmission;
 mod equipment;
 
+use std::sync::Arc;
+
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Make {
     pub id: u32,
     pub name: String,
     #[serde(rename="niceName")]
     pub nice_name: String,
-    pub models: Vec<Model>,
+    pub models: Vec<Arc<Model>>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -27,7 +29,7 @@ pub struct Model {
     pub name: String,
     #[serde(rename="niceName")]
     pub nice_name: String,
-    pub years: Vec<Year>,
+    pub years: Vec<Arc<Year>>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -35,7 +37,7 @@ pub struct Year {
     pub id: u32,
     pub year: u16,
     #[serde(default)]
-    pub styles: Vec<Style>,
+    pub styles: Vec<Arc<Style>>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
